@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Nhập cân nặng hiện tại của Bò"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"></TextView>
+
+    <EditText
+        android:id="@+id/edt_kg_present"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="#B3B0AF"
+        android:inputType="number"
+        android:padding="5dp"></EditText>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_confirm_weight"
+            android:text="Ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></Button>
+
+        <Button
+            android:id="@+id/btn_notconfirm_weight"
+            android:text="Hủy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

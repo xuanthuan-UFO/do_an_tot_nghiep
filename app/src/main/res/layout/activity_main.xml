@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="#00BCD4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Xin chào"
+            android:textSize="20sp"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nameapp"
+            android:layout_width="350dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:padding="10dp"
+            android:text="Phân tích Khẩu phần ăn cho Bò"
+            android:textAllCaps="true"
+            android:textColor="#1E66BF"
+            android:textSize="24sp"
+            android:textStyle="bold"></TextView>
+
+        <Button
+            android:background="@drawable/custom_btn"
+            android:id="@+id/btncreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameapp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Tạo mới"></Button>
+
+        <Button
+            android:background="@drawable/custom_btn"
+            android:id="@+id/btnMyRation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btncreate"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Thực đơn của tôi"></Button>
+
+        <Button
+            android:background="@drawable/custom_btn"
+            android:id="@+id/btngoiy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnMyRation"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Gợi ý"></Button>
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/btnchoosefile"
+            android:layout_below="@id/btngoiy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="chonfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity_MyRation">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="#00BCD4"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        android:id="@+id/toolbar_myRation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="Thực đơn của tôi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:layout_below="@+id/toolbar_myRation"
+        android:padding="10dp"
+        android:id="@+id/lv_Myration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+
+</RelativeLayout>

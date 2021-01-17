@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_infor_ration"
+        android:checked="true"
+        android:title="Thông tin"></item>
+    <item
+        android:id="@+id/menu_food_ration"
+        android:checked="false"
+        android:title="Thức ăn"></item>
+    <item
+        android:id="@+id/menu_evaluate_ration"
+        android:checked="false"
+        android:title="Phân tích"></item>
+</menu>

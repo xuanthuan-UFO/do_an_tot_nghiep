@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragment_ChooseFood">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txt_choosefood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="Chọn thức ăn -> "
+            android:textSize="14sp"></TextView>
+
+        <Spinner
+            android:padding="10dp"
+            android:id="@+id/spn_choose_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txt_choosefood"
+            android:background="#ECEAE8"></Spinner>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/name_food_chooseFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_choosefood"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Tên Thức ăn"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_choosefood"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Số lượng"
+            android:textSize="18sp"></TextView>
+
+        <ListView
+            android:id="@+id/lvChoose_food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/name_food_chooseFood"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"></ListView>
+
+    </RelativeLayout>
+
+</FrameLayout>
